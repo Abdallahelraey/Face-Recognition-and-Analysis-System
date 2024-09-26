@@ -66,21 +66,10 @@ The system will:
 
 #### Processed Abdallah_Mohamed.jpeg: {'age': 23, 'gender': {'Woman': 0.00031815122838452226, 'Man': 99.99967813491821}, 'dominant_emotion': 'happy', 'dominant_race': 'middle eastern'}
 
-### Batch Image Processing
-Run the batch script with a test image:
-```bash
-python batch_recognition.py
-```
-It will print the names, face locations, and attributes (age, gender, emotion, race) of detected individuals.
-
----
 
 ## Contributing
 If you wish to contribute to this project, please submit a pull request or open an issue.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the Apache License.
 
---- 
-
-This `README.md` gives a comprehensive overview of the project, instructions for setup, and details on how to run both real-time and batch image processing functionalities.
