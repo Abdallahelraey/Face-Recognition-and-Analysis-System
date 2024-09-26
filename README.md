@@ -10,6 +10,14 @@ This project provides a comprehensive real-time face recognition and facial anal
 - **Real-time Video Feed**: Captures live video feed from a webcam and processes frames to display recognition and analysis results.
 - **Batch Image Processing**: Processes images to detect, recognize, and analyze faces in static image files.
 
+
+## Example Usage
+![alt text](images/individuals/Abdallah_Mohamed.jpeg)
+#### Processed Abdallah_Mohamed.jpeg: {'age': 23, 'gender': {'Woman': 0.00031815122838452226, 'Man': 99.99967813491821}, 'dominant_emotion': 'happy', 'dominant_race': 'middle eastern'}
+![alt text](<images/artifacts/Screenshot 2024-09-26 234743.png>)
+#### Elon Musk: Age: 34 Dominant Emotion: Happy (97.22%) Dominant Gender: Man (99.73%) Dominant Race: Asian (33.31%) Confidence: 0.92 ...etc
+![alt text](<images/artifacts/that is me.png>)
+
 ## Technologies
 - **OpenCV**: Used for capturing video feed and image manipulation.
 - **Dlib**: Used for detecting faces and predicting facial landmarks.
