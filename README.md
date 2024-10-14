@@ -33,47 +33,16 @@ pip install opencv-python dlib face_recognition deepface
 
 Ensure you have the `shape_predictor_68_face_landmarks.dat` file, which can be downloaded from [Dlib's model page](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2).
 
-## How to Run the Project
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Abdallahelraey/Face-Recognition-and-Analysis-System.git
-   cd "Face Recognition"
-   ```
-
-2. **Load known faces**: 
-   Place images of known individuals into the `./images/individuals` directory. The system will automatically encode and save their face data for recognition.
-
-3. **Run the real-time face recognition and analysis system**:
-   ```bash
-   python main.py
-   ```
-   Press `q` to quit the real-time video feed.
-
-4. **Run the batch image face recognition and analysis**:
-   To process static images:
-   ```bash
-   python batch_recognition.py
-   ```
-
-## File Structure
-- `main.py`: Entry point for running the real-time face recognition system using live video feed.
-- `batch_recognition.py`: Script for running face recognition and analysis on static images.
-- `FaceRecognitionSystem.py`: Core class that handles real-time face detection, recognition, and facial attribute analysis.
-- `FaceRecognitionAndAnalysis.py`: Core class that handles face recognition and analysis for static images.
-
-Here's an updated version of the `README` based on the provided instructions and your new implementation:
-
----
-
-## Face Recognition and Attribute Detection System
-
-This project includes two modes: real-time video face recognition and static image face recognition. The system uses pre-loaded known faces to recognize individuals and analyze facial attributes.
 
 ### How to Run the Project
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/Abdallahelraey/Face-Recognition-and-Analysis-System.git
+   ```
+
+   ```bash  
    cd "Face Recognition"
    ```
 
