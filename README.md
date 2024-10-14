@@ -36,8 +36,8 @@ Ensure you have the `shape_predictor_68_face_landmarks.dat` file, which can be d
 ## How to Run the Project
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/facerecognition-system.git
-   cd facerecognition-system
+   git clone https://github.com/Abdallahelraey/Face-Recognition-and-Analysis-System.git
+   cd "Face Recognition"
    ```
 
 2. **Load known faces**: 
@@ -60,6 +60,65 @@ Ensure you have the `shape_predictor_68_face_landmarks.dat` file, which can be d
 - `batch_recognition.py`: Script for running face recognition and analysis on static images.
 - `FaceRecognitionSystem.py`: Core class that handles real-time face detection, recognition, and facial attribute analysis.
 - `FaceRecognitionAndAnalysis.py`: Core class that handles face recognition and analysis for static images.
+
+Here's an updated version of the `README` based on the provided instructions and your new implementation:
+
+---
+
+## Face Recognition and Attribute Detection System
+
+This project includes two modes: real-time video face recognition and static image face recognition. The system uses pre-loaded known faces to recognize individuals and analyze facial attributes.
+
+### How to Run the Project
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Abdallahelraey/Face-Recognition-and-Analysis-System.git
+   cd "Face Recognition"
+   ```
+
+2. **Prepare known faces**:  
+   Place images of known individuals into the `./images/individuals` directory. The system will automatically encode and store their facial data for later recognition.
+
+3. **Run the system**:  
+   You can run the project in either **static** or **real-time video** mode by executing the `main.py` script. The system will prompt you to choose between these two modes.
+
+   - **Run the face recognition system**:
+     ```bash
+     python main.py
+     ```
+
+   - The system will ask you to choose between:
+     - `static`: To process a batch image.
+     - `video`: To start real-time video recognition and analysis.
+
+4. **Real-time video face recognition and analysis**:  
+   If you choose `video`, the system will start capturing video using your webcam. It will recognize and display known faces and their locations in real time.
+   - Press `q` to quit the video feed.
+
+5. **Batch image face recognition and analysis**:  
+   If you choose `static`, the system will load an image from the `./images/group/` directory (or any specified path) and perform face recognition and attribute analysis. The recognized faces, their locations, and their attributes will be printed in the console.
+
+6. **Run other modules directly**:
+   You can also run the two main face recognition modules directly without using `main.py`:
+   - **Real-time video recognition**:
+     ```bash
+     python real_time_face_recognition_attributes_detention.py
+     ```
+   - **Static image recognition**:
+     ```bash
+     python static_face_recognition_attributes_detention.py
+     ```
+
+### Project Structure
+- `main.py`: The main entry point to choose between static and video face recognition.
+- `real_time_face_recognition_attributes_detention.py`: Handles real-time video-based face recognition.
+- `static_face_recognition_attributes_detention.py`: Handles batch image face recognition and analysis.
+- `./images/individuals/`: Directory to store images of known individuals for face recognition.
+- `./images/group/`: Directory to store group images or test images for batch recognition.
+
+--- 
+
 
 ## Customization
 You can modify the paths for images, tune the facial analysis settings in the `DeepFace.analyze()` method, or extend the system to include additional features like face tracking.
