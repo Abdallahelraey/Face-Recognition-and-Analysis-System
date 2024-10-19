@@ -5,13 +5,7 @@ __pycache__/
 
 
 # Ignoring all the artifacts created by the build process
-data/processed/*
-!data/processed/.gitkeep
-data/raw/*
-!data/raw/.gitkeep
-models/saved_models/*
-!models/saved_models/.gitkeep
-
+Data
 
 # C extensions
 *.so
